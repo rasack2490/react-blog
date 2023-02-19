@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL}>
         <Route path="/" exact element={<Home />} />
         <Route path="/ecrire" exact element={<AddArticle />} />
         <Route path="/contact" exact element={<Contact />} />
